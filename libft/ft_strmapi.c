@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/06 23:55:44 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/06 23:56:33 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/07 22:48:19 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*str;
 
 	i = 0;
+	if (!s || !f)
+		return (ft_strdup(""));
 	if (!(str = ft_strdup((char *)s)))
 		return (0);
 	while (str[i])

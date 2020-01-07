@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/10 21:53:40 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 22:07:41 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/07 22:47:46 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		len;
 	char	*s2;
 
-	if (!s1)
-		return (NULL);
+	if (!s1 || !set)
+		return (ft_strdup(""));
 	s2 = (char*)s1;
 	len = len_trim(s2, set);
 	i = 0;

@@ -6,18 +6,17 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/07 01:25:43 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 01:25:51 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/07 22:40:26 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	write(fd, s, i);
+	if (!s)
+		return ;
+	if (fd)
+		write(fd, s, ft_strlen(s));
 }
