@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 20:26:37 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 18:09:05 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/08 16:13:30 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,9 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t	i;
-
-	unsigned char *cast_dst;
-	unsigned char *cast_src;
+	size_t			i;
+	unsigned char	*cast_dst;
+	unsigned char	*cast_src;
 
 	i = 0;
 	cast_src = (unsigned char *)src;

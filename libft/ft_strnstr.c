@@ -6,14 +6,14 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 19:04:30 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 17:08:15 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/08 16:17:43 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #define S size_t
 
-static unsigned int	ft_strlen(char *str)
+static unsigned int		ft_strlen(char *str)
 {
 	unsigned int i;
 
@@ -23,7 +23,7 @@ static unsigned int	ft_strlen(char *str)
 	return (i);
 }
 
-char			*ft_strstr(char *str, char *to_find, size_t len)
+char					*ft_strstr(char *str, char *to_find, size_t len)
 {
 	unsigned long		i;
 	unsigned int		y;
@@ -52,7 +52,8 @@ char			*ft_strstr(char *str, char *to_find, size_t len)
 	return (NULL);
 }
 
-char			*ft_strnstr(const char *haystack, const char *needle, S len)
+char					*ft_strnstr(const char *haystack,
+		const char *needle, S len)
 {
 	char *return_value;
 

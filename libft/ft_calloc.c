@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/09 15:20:27 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 19:20:17 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/08 16:06:13 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void			*return_value;
-	
+
 	if (count == 0 || size == 0)
 	{
 		count = 1;

@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/10 21:53:40 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 22:47:46 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/08 16:14:31 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		check_set(char c, char const *set)
 	return (0);
 }
 
-int	len_trim(char *s1, const char *set)
+int		len_trim(char *s1, const char *set)
 {
 	int i;
 	int y;
@@ -35,7 +35,7 @@ int	len_trim(char *s1, const char *set)
 	y = 0;
 	i = 0;
 	while (check_set(s1[i], set) && s1[i])
-			i++;
+		i++;
 	if (s1[i] == '\0')
 		return (1);
 	y = i;

@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/07 01:16:16 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 18:54:53 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/08 16:12:51 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,8 @@ char	*ft_itoa(int n)
 	char	*ret;
 	int		negative;
 
-	if (n == 2147483647)
-		return (ft_strdup("2147483647"));
-	if (n == -2147483648)
-		return (ft_strdup("2147483648"));
-	if (n == 0)
-		return (ft_strdup("0"));
+	if (n == -2147483648 || n == 0)
+		return (ft_strdup(n == 0 ? "0" : "-2147483648"));
 	negative = n > 0 ? 0 : 1;
 	n = (negative) ? n *= -1 : n;
 	i = 0;

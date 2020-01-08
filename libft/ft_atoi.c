@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 22:48:46 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 19:09:59 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/08 16:05:44 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-
 		return_value = return_value * 10 + str[i] - '0';
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: motoure <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/09 19:41:32 by motoure           #+#    #+#             */
-/*   Updated: 2020/01/07 19:28:50 by motoure          ###   ########.fr       */
+/*   Updated: 2020/01/08 16:13:38 by motoure          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*return_value;
-	
+
 	if (!s)
 		return (NULL);
 	if (start > (unsigned int)ft_strlen(s))
